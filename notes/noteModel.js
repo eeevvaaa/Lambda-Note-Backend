@@ -14,7 +14,7 @@ function get() {
 	return db('notes');
 }
 
-function getById() {
+function getById(id) {
 	return db('notes')
 		.where({ id })
 		.first();
