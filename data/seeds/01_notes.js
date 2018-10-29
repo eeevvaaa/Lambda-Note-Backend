@@ -1,8 +1,8 @@
 exports.seed = function(knex, Promise) {
-	return knex('table_name')
+	return knex('notes')
 		.truncate()
 		.then(function() {
-			return knex('table_name').insert([
+			return knex('notes').insert([
 				{
 					title: 'Lorem ipsum',
 					content:
