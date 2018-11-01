@@ -1,6 +1,7 @@
 # Lambda Note Backend
 
 - [Trello board](https://trello.com/b/1fdBmp7I)
+- [Netlify](https://reactnotes.netlify.com)
 
 ## Notes API
 
@@ -30,11 +31,11 @@ a `GET` request to this route (with "id" replaced by the note ID) will return th
 
 ### https://agile-bastion-89851.herokuapp.com/api/note
 
-a `POST` request to this route with the title and text in the req.body will create a new note. The response from the server will be the ID of the new note.
+a `POST` request to this route with the title and content in the req.body will create a new note. The response from the server will be the ID of the new note.
 
 ### https://agile-bastion-89851.herokuapp.com/api/note/id
 
-a `PUT` request to this route with the title and text in the req body will edit the note with the specified ID. The response from the server will be the updated note object.
+a `PUT` request to this route with the title and content in the req body will edit the note with the specified ID. The response from the server will be the updated note object.
 
 ### https://agile-bastion-89851.herokuapp.com/api/note/id
 
