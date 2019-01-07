@@ -40,7 +40,7 @@ router.post('/login', (req, res) => {
 		.catch(err => errHelper(500, 'Error loggin in.', res));
 });
 
-router.get('/users', authenticate, (_, res) => {
+router.get('/all', authenticate, (_, res) => {
 	users
 		.get()
 		.then(users => {
