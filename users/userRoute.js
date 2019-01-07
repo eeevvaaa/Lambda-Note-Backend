@@ -18,7 +18,7 @@ router.post('/register', (req, res) => {
 	users
 		.insert(creds)
 		.then(id => {
-			res.status(201).json({ message: `ID: ${id} created` });
+			res.status(201).json({ message: `user: ${id} created` });
 		})
 		.catch(err => errHelper(500, 'Error creating user.', res));
 });
@@ -32,7 +32,7 @@ router.post('/login', (req, res) => {
 		.then(user => {
 			if (user && bcrypt.compareSync(creds.password, user.password)) {
 				const token = generateToken(user);
-				res.status(200).json({ message: 'Logged in', token });
+				res.status(200).json({ welcome: username, token });
 			} else {
 				res.status(401).json({ message: 'You shall not pass!' });
 			}
