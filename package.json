@@ -2,7 +2,7 @@
 	"name": "lnbackend",
 	"version": "1.0.0",
 	"main": "index.js",
-	"repository": "https://github.com/eeevvaaa/lnbackend.git",
+	"repository": "https://github.com/eeevvaaa/Node-Note-App-Server.git",
 	"author": "Eva <evalee904@gmail.com>",
 	"license": "MIT",
 	"scripts": {
