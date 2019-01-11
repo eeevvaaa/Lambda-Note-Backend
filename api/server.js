@@ -7,11 +7,11 @@ const server = express();
 
 configMiddleware(server);
 
-routers.noteRouters(server);
-routers.userRouters(server);
+routers.noteRoute(server);
+routers.userRoute(server);
 
 // test API root path
-server.get('/', (_, res) => {
+server.get('/', (req, res) => {
 	res.status(200).send('Hi!');
 });
 
