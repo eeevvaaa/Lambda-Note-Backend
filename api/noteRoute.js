@@ -1,5 +1,5 @@
 const express = require('express');
-const notes = require('./noteModel');
+const notes = require('../data/helpers/noteModel');
 const router = express.Router();
 const errHelper = (status, message, res) => {
 	console.log('Error');
