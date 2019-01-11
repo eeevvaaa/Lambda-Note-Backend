@@ -2,6 +2,7 @@ const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
 const port = process.env.PORT || 8000;
+require('dotenv').config();
 
 const noteRoute = require('./notes/noteRoute');
 const userRoute = require('./users/userRoute');
